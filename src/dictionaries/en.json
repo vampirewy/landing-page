@@ -1,0 +1,33 @@
+{
+  "homePageMetaData": {
+    "title": "AI Tool - Intelligent Assistant",
+    "description": "Use AI to improve work efficiency and provide you with intelligent solutions"
+  },
+  "navBarComponent": {
+    "title": "AI Studio",
+    "navigation": [
+      {
+        "name": "Products",
+        "href": "#",
+        "hasDropdown": true,
+        "items": ["AI Assistant", "Doc Processing", "Image Generation", "API Services"]
+      },
+      {
+        "name": "Solutions",
+        "href": "#solutions",
+        "hasDropdown": true,
+        "items": ["Enterprise", "Personal", "Developers"]
+      },
+      {
+        "name": "Pricing",
+        "href": "#pricing"
+      },
+      {
+        "name": "Resources",
+        "href": "#resources"
+      }
+    ],
+    "loginText": "Login",
+    "startText": "Get Started"
+  }
+}
