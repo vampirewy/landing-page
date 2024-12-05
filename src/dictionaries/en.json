@@ -28,6 +28,9 @@
       }
     ],
     "loginText": "Login",
-    "startText": "Get Started"
+    "startText": "Get Started",
+    "sheetTitle": "Navigation",
+    "sheetDescription": "Browse our products, solutions, and services",
+    "chooseLanguage": "Choose Language"
   }
 }

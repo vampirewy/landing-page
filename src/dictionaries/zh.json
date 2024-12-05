@@ -28,6 +28,9 @@
       }
     ],
     "loginText": "登录",
-    "startText": "免费使用"
+    "startText": "免费使用",
+    "sheetTitle": "菜单",
+    "sheetDescription": "浏览我们的产品、解决方案和服务",
+    "chooseLanguage": "选择语言"
   }
 }

@@ -1,11 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { NavBarComponent } from "@/types/dictionary";
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 
-export default function NavDesktop({ dict }: { dict: any }) {
+export default function NavDesktop({ dict }: { dict: NavBarComponent }) {
   return (
     <>
-      {dict.navBarComponent.navigation.map((item: any) => (
+      {dict.navigation.map((item: any) => (
         <div key={item.name} className="relative group">
           <Link
             href={item.href}
