@@ -1,7 +1,7 @@
 {
   "homePageMetaData": {
-    "title": "AI Tool - Intelligent Assistant",
-    "description": "Use AI to improve work efficiency and provide you with intelligent solutions"
+    "title": "AI Studio - Intelligent Solutions for Business & Development",
+    "description": "Transform your workflow with AI Studio's intelligent tools. Our AI assistant, document processing, and API services help businesses work smarter and faster."
   },
   "navBarComponent": {
     "title": "AI Studio",
@@ -29,8 +29,186 @@
     ],
     "loginText": "Login",
     "startText": "Get Started",
-    "sheetTitle": "Navigation",
+    "sheetTitle": "Menu",
     "sheetDescription": "Browse our products, solutions, and services",
     "chooseLanguage": "Choose Language"
+  },
+  "footer": {
+    "about": "About Us",
+    "companyDescription": "Empowering innovation through AI. We specialize in developing intelligent solutions that transform complex tasks into seamless experiences, helping businesses and developers build smarter applications.",
+    "email": "contact@aistudio.com",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "followUs": "Follow Us",
+    "companyName": "Your Company Name",
+    "rightsReserved": "All rights reserved.",
+    "pricing": "Pricing",
+    "resources": "Resources"
+  },
+  "homePage": {
+    "hero": {
+      "title": "Transform Your Ideas with AI Studio",
+      "subtitle": "Powerful AI tools to enhance your workflow and boost productivity",
+      "cta": "Start Free Trial",
+      "secondaryCta": "View Demo"
+    },
+    "features": {
+      "title": "Intelligent Solutions for Modern Workflows",
+      "items": [
+        {
+          "title": "AI Assistant",
+          "description": "Smart AI companion that understands context and delivers precise responses"
+        },
+        {
+          "title": "Document Processing",
+          "description": "Automated document analysis and data extraction with high accuracy"
+        },
+        {
+          "title": "Image Generation",
+          "description": "Create stunning visuals from text descriptions in seconds"
+        },
+        {
+          "title": "API Integration",
+          "description": "Seamless integration with your existing workflows and applications"
+        }
+      ]
+    },
+    "benefits": {
+      "title": "Why Choose AI Studio",
+      "items": [
+        {
+          "title": "Enhanced Productivity",
+          "description": "Save hours of work with automated tasks and intelligent assistance"
+        },
+        {
+          "title": "Enterprise Security",
+          "description": "Bank-grade encryption and data protection for your peace of mind"
+        },
+        {
+          "title": "Developer Friendly",
+          "description": "Comprehensive APIs and SDKs for seamless integration"
+        }
+      ]
+    },
+    "useCases": {
+      "title": "Real-World Applications",
+      "description": "See how organizations are transforming their operations with AI Studio",
+      "cases": [
+        {
+          "title": "Enterprise",
+          "description": "Automate workflows and enhance decision-making processes"
+        },
+        {
+          "title": "Developers",
+          "description": "Build intelligent features into your applications"
+        },
+        {
+          "title": "Creators",
+          "description": "Generate content and ideas with AI assistance"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Transform Your Workflow?",
+      "description": "Start using AI Studio today and experience the future of intelligent automation.",
+      "primaryAction": "Get Started Free",
+      "secondaryAction": "Contact Sales"
+    },
+    "testimonials": {
+      "title": "Trusted by Innovative Teams",
+      "subtitle": "See what our customers are saying about AI Studio",
+      "items": [
+        {
+          "content": "AI Studio has revolutionized our content creation process. The AI assistant understands context perfectly and helps us produce high-quality content in half the time.",
+          "author": "Sarah Johnson",
+          "role": "Content Director",
+          "company": "TechCorp"
+        },
+        {
+          "content": "The developer-friendly APIs and comprehensive documentation made integration a breeze. Our team was able to add AI capabilities to our app within days.",
+          "author": "Michael Chen",
+          "role": "Lead Developer",
+          "company": "InnovateLab"
+        },
+        {
+          "content": "Enterprise-grade security and scalable performance. AI Studio has become an essential part of our workflow automation strategy.",
+          "author": "Emily Williams",
+          "role": "CTO",
+          "company": "Enterprise Solutions"
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Simple, Transparent Pricing",
+      "subtitle": "Choose the plan that best fits your needs",
+      "plans": [
+        {
+          "name": "Starter",
+          "price": "$0",
+          "description": "Perfect for trying out AI Studio",
+          "features": ["1,000 API calls/month", "Basic AI assistant", "Community support", "Basic documentation"],
+          "cta": "Start Free"
+        },
+        {
+          "name": "Pro",
+          "price": "$49",
+          "description": "For professionals and growing teams",
+          "features": [
+            "50,000 API calls/month",
+            "Advanced AI features",
+            "Priority support",
+            "Full API access",
+            "Team collaboration"
+          ],
+          "cta": "Start Pro Trial",
+          "popular": true
+        },
+        {
+          "name": "Enterprise",
+          "price": "Custom",
+          "description": "For large organizations with custom needs",
+          "features": [
+            "Unlimited API calls",
+            "Custom AI models",
+            "24/7 dedicated support",
+            "Custom integration",
+            "SLA guarantee",
+            "Advanced security"
+          ],
+          "cta": "Contact Sales"
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about AI Studio",
+      "items": [
+        {
+          "question": "What is AI Studio?",
+          "answer": "AI Studio is a comprehensive AI platform that helps businesses and developers integrate intelligent features into their workflows and applications. Our tools include AI assistants, document processing, image generation, and API services."
+        },
+        {
+          "question": "How does the pricing work?",
+          "answer": "We offer flexible pricing plans starting with a free tier for basic usage. Our Pro plan includes advanced features and higher usage limits, while Enterprise plans are customized to your specific needs. All plans are billed monthly with no hidden fees."
+        },
+        {
+          "question": "Is my data secure?",
+          "answer": "Yes, we take security seriously. We use bank-grade encryption, implement strict access controls, and comply with industry security standards. Your data is encrypted both in transit and at rest."
+        },
+        {
+          "question": "Do you offer technical support?",
+          "answer": "Yes, all plans include some level of support. Free tier users have access to community support, Pro users get priority email support, and Enterprise customers receive 24/7 dedicated support with SLA guarantees."
+        },
+        {
+          "question": "Can I try before subscribing?",
+          "answer": "Yes! You can start with our free tier which includes basic features and API calls. This allows you to test our services and see how they fit your needs before upgrading to a paid plan."
+        }
+      ]
+    }
   }
 }

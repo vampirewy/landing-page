@@ -8,7 +8,7 @@ export default function NavMobileButton({ dict }: { dict: NavBarComponent }) {
         {dict.loginText}
       </Button>
       <Button
-        className="w-full bg-gradient-to-r from-violet-600 to-indigo-600 hover:opacity-90 shadow-md shadow-indigo-200"
+        className="w-full bg-gradient-to-r from-violet-500 to-indigo-500 hover:from-violet-600 hover:to-indigo-600 text-white shadow-md transition-all duration-200"
         size="lg"
       >
         {dict.startText}

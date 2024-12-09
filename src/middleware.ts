@@ -1,4 +1,4 @@
-import { i18n } from "@/config/i18n";
+import { i18n, isDefaultLocale, Locale } from "@/config/i18n";
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
@@ -27,16 +27,16 @@ export function middleware(request: NextRequest) {
   }
 
   // 从cookie或请求头中获取首选语言
-  const locale = request.cookies.get("NEXT_LOCALE")?.value || "en";
+  const locale = request.cookies.get("NEXT_LOCALE")?.value || i18n.defaultLocale;
 
   // 如果是根路径且语言是英文，重定向到 /en
-  if (pathname === "/" && locale === "en") {
-    return NextResponse.rewrite(new URL("/en", request.url));
+  if (pathname === process.env.NEXT_PUBLIC_ROOT_URL && isDefaultLocale(locale as Locale)) {
+    return NextResponse.rewrite(new URL(`/${locale}`, request.url));
   }
 
   // 如果是其他路径且语言是英文，重写URL（不改变浏览器地址）
-  if (locale === "en") {
-    return NextResponse.rewrite(new URL(`/en${pathname}`, request.url));
+  if (isDefaultLocale(locale as Locale)) {
+    return NextResponse.rewrite(new URL(`/${locale}${pathname}`, request.url));
   }
 
   // 对于其他语言，重定向到带有语言代码的路径

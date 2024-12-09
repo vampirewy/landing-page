@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/Footer";
 import Navbar from "@/components/nav/Navbar";
 import { i18n, Locale } from "@/config/i18n";
 import { getDictionary } from "@/lib/dictionary";
@@ -49,7 +50,9 @@ export default async function Layout({ children, params }: { children: React.Rea
       >
         <Navbar lang={params.lang} dict={dict.navBarComponent}></Navbar>
         <main>{children}</main>
+        <Footer lang={params.lang} dict={dict.footer} />
       </body>
     </html>
   );
 }
+

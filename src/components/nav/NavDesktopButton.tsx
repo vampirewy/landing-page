@@ -10,7 +10,7 @@ export default function NavDesktopButton({ dict }: { dict: NavBarComponent }) {
       </Button>
       <Button
         size="lg"
-        className="bg-gradient-to-r from-violet-600 to-indigo-600 hover:opacity-90 transition-all duration-200 shadow-md shadow-indigo-200 font-medium"
+        className="bg-gradient-to-r from-violet-500 to-indigo-500 hover:from-violet-600 hover:to-indigo-600 text-white shadow-md transition-all duration-200 font-medium"
       >
         {dict.startText}
       </Button>

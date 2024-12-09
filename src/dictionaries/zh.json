@@ -1,7 +1,7 @@
 {
   "homePageMetaData": {
-    "title": "AI Tool - 智能助手",
-    "description": "使用 AI 提升工作效率，为您提供智能化解决方案"
+    "title": "AI Studio - 企业与开发的智能解决方案",
+    "description": "用 AI Studio 的智能工具改变您的工作方式。我们的 AI 助手、文档处理和 API 服务助力企业更智能、更高效地工作。"
   },
   "navBarComponent": {
     "title": "AI",
@@ -32,5 +32,170 @@
     "sheetTitle": "菜单",
     "sheetDescription": "浏览我们的产品、解决方案和服务",
     "chooseLanguage": "选择语言"
+  },
+  "footer": {
+    "about": "关于我们",
+    "companyDescription": "通过 AI 赋能创新。我们专注于开发智能解决方案，将复杂任务转化为流畅体验，助力企业和开发者构建更智能的应用。",
+    "email": "contact@aistudio.com",
+    "quickLinks": "快速链接",
+    "services": "服务",
+    "aboutUs": "关于我们",
+    "contact": "联系我们",
+    "legal": "法律信息",
+    "privacy": "隐私政策",
+    "terms": "服务条款",
+    "followUs": "关注我们",
+    "companyName": "公司名称",
+    "rightsReserved": "版权所有",
+    "pricing": "定价",
+    "resources": "资源"
+  },
+  "homePage": {
+    "hero": {
+      "title": "用 AI Studio 转化您的创意",
+      "subtitle": "强大的 AI 工具，提升工作流程，促进生产力",
+      "cta": "免费试用",
+      "secondaryCta": "查看演示"
+    },
+    "features": {
+      "title": "现代工作流程的智能解决方案",
+      "items": [
+        {
+          "title": "AI 助手",
+          "description": "智能 AI 伙伴，理解上下文并提供精准回应"
+        },
+        {
+          "title": "文档处理",
+          "description": "自动化文档分析和高精度数据提取"
+        },
+        {
+          "title": "图像生成",
+          "description": "秒级将文本描述转化为精美视觉效果"
+        },
+        {
+          "title": "API 集成",
+          "description": "与现有工作流程和应用无缝集成"
+        }
+      ]
+    },
+    "benefits": {
+      "title": "为什么选择 AI Studio",
+      "items": [
+        {
+          "title": "提升生产力",
+          "description": "通过自动化任务和智能协助节省大量工作时间"
+        },
+        {
+          "title": "企业级安全",
+          "description": "银行级加密和数据保护，确保您的安心使用"
+        },
+        {
+          "title": "开发者友好",
+          "description": "全面的 API 和 SDK，实现无缝集成"
+        }
+      ]
+    },
+    "useCases": {
+      "title": "实际应用场景",
+      "description": "了解各类组织如何使用 AI Studio 转变运营方式",
+      "cases": [
+        {
+          "title": "企业",
+          "description": "自动化工作流程，增强决策制定"
+        },
+        {
+          "title": "开发者",
+          "description": "在应用中构建智能功能"
+        },
+        {
+          "title": "创作者",
+          "description": "借助 AI 辅助生成内容和创意"
+        }
+      ]
+    },
+    "cta": {
+      "title": "准备好改变您的工作流程了吗？",
+      "description": "立即使用 AI Studio，体验智能自动化的未来。",
+      "primaryAction": "免费开始使用",
+      "secondaryAction": "联系销售"
+    },
+    "testimonials": {
+      "title": "创新团队的信赖之选",
+      "subtitle": "听听我们的客户对 AI Studio 的评价",
+      "items": [
+        {
+          "content": "AI Studio 彻底改变了我们的内容创作流程。AI 助手能够完美理解上下文，帮助我们在一半的时间内制作出高质量内容。",
+          "author": "陈明",
+          "role": "内容总监",
+          "company": "科技创新"
+        },
+        {
+          "content": "开发者友好的 API 和全面的文档使集成变得轻而易举。我们的团队在几天内就为应用添加了 AI 功能。",
+          "author": "李伟",
+          "role": "首席开发师",
+          "company": "创新实验室"
+        },
+        {
+          "content": "企业级安全性和可扩展性表现。AI Studio 已成为我们工作流程自动化战略的重要组成部分。",
+          "author": "张雯",
+          "role": "技术总监",
+          "company": "企业解决方案"
+        }
+      ]
+    },
+    "pricing": {
+      "title": "简单透明的价格",
+      "subtitle": "选择适合您需求的方案",
+      "plans": [
+        {
+          "name": "入门版",
+          "price": "¥0",
+          "description": "体验 AI Studio 的完美方式",
+          "features": ["每月1,000次API调用", "基础AI助手", "社区支持", "基础文档"],
+          "cta": "免费开始"
+        },
+        {
+          "name": "专业版",
+          "price": "¥349",
+          "description": "适合专业人士和成长中的团队",
+          "features": ["每月50,000次API调用", "高级AI功能", "优先支持", "完整API访问", "团队协作"],
+          "cta": "试用专业版",
+          "popular": true
+        },
+        {
+          "name": "企业版",
+          "price": "定制",
+          "description": "适合有定制需求的大型组织",
+          "features": ["无限API调用", "定制AI模型", "24/7专属支持", "定制集成", "SLA保障", "高级安全"],
+          "cta": "联系销售"
+        }
+      ]
+    },
+    "faq": {
+      "title": "常见问题",
+      "subtitle": "关于 AI Studio 您需要了解的一切",
+      "items": [
+        {
+          "question": "什么是 AI Studio？",
+          "answer": "AI Studio 是一个综合性 AI 平台，帮助企业和开发者将智能功能集成到工作流程和应用中。我们的工具包括 AI 助手、文档处理、图像生成和 API 服务。"
+        },
+        {
+          "question": "价格如何计算？",
+          "answer": "我们提供灵活的定价方案，从基础使用的免费版开始。专业版包含高级功能和更高的使��限制，而企业版则根据您的具体需求定制。所有方案均按月计费，无隐藏费用。"
+        },
+        {
+          "question": "我的数据安全吗？",
+          "answer": "是的，我们非常重视安全性。我们使用银行级加密，实施严格的访问控制，并遵守行业安全标准。您的数据在传输和存储时都会被加密。"
+        },
+        {
+          "question": "是否提供技术支持？",
+          "answer": "是的，所有方案都包含一定程度的支持。免费版用户可以获得社区支持，专业版用户享有优先邮件支持，企业版客户则获得全天候专属支持和 SLA 保障。"
+        },
+        {
+          "question": "可以先试用吗？",
+          "answer": "当然可以！您可以从包含基本功能和 API 调用的免费版开始。这样您可以在升级到付费方案之前测试我们的服务，看看是否符合您的需求。"
+        }
+      ]
+    }
   }
 }

@@ -1,0 +1,20 @@
+{
+  "footer": {
+    "about": "About Us",
+    "companyDescription": "Your company description here",
+    "address": "123 Business Street",
+    "city": "City, Country",
+    "phone": "+1 234 567 890",
+    "email": "contact@example.com",
+    "quickLinks": "Quick Links",
+    "services": "Services",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "legal": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "followUs": "Follow Us",
+    "companyName": "Your Company Name",
+    "rightsReserved": "All rights reserved."
+  }
+}

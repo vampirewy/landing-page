@@ -1,5 +1,5 @@
 "use client";
-import { Locale } from "@/config/i18n";
+import { getLocalizedPath, Locale } from "@/config/i18n";
 import { NavBarComponent } from "@/types/dictionary";
 import { Stars } from "lucide-react";
 import Link from "next/link";
@@ -29,14 +29,14 @@ export default function Navbar({ lang, dict }: { lang: Locale; dict: NavBarCompo
       }`}
     >
       <nav className="container mx-auto px-4 lg:px-8 relative">
-        <div className="flex h-20 lg:h-24 items-center justify-between">
+        <div className="flex h-16 lg:h-20 items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <Link href={"/"} className="flex items-center space-x-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 flex items-center justify-center">
-                <Stars className="w-6 h-6 text-white" />
+            <Link href={getLocalizedPath("/", lang)} className="flex items-center space-x-3">
+              <div className="w-8 h-8 rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 flex items-center justify-center">
+                <Stars className="w-5 h-5 text-white" />
               </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
+              <span className="text-xl font-bold bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
                 {dict.title}
               </span>
             </Link>
