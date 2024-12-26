@@ -45,10 +45,44 @@
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "followUs": "Follow Us",
-    "companyName": "Your Company Name",
+    "companyName": "Your Company",
     "rightsReserved": "All rights reserved.",
     "pricing": "Pricing",
-    "resources": "Resources"
+    "resources": "Resources",
+    "copyright": "Your Company. All rights reserved."
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "content": [
+      {
+        "title": "1. Acceptance of Terms",
+        "content": "By accessing and using this website, you accept and agree to be bound by the terms and provision of this agreement."
+      },
+      {
+        "title": "2. Use License",
+        "content": "Permission is granted to temporarily download one copy of the materials (information or software) on this website for personal, non-commercial transitory viewing only."
+      },
+      {
+        "title": "3. Disclaimer",
+        "content": "The materials on this website are provided on an 'as is' basis. We make no warranties, expressed or implied, and hereby disclaim and negate all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights."
+      },
+      {
+        "title": "4. Limitations",
+        "content": "In no event shall we or our suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on our website."
+      },
+      {
+        "title": "5. Revisions and Errata",
+        "content": "The materials appearing on our website could include technical, typographical, or photographic errors. We do not warrant that any of the materials on our website are accurate, complete or current."
+      },
+      {
+        "title": "6. Links",
+        "content": "We have not reviewed all of the sites linked to our website and are not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by us of the site."
+      },
+      {
+        "title": "7. Modifications",
+        "content": "We may revise these terms of service for our website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service."
+      }
+    ]
   },
   "homePage": {
     "hero": {
@@ -210,5 +244,38 @@
         }
       ]
     }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "content": [
+      {
+        "title": "1. Information Collection",
+        "content": "We collect information that you provide directly to us, including when you create an account, use our services, or contact us for support. This may include your name, email address, and usage data."
+      },
+      {
+        "title": "2. Use of Information",
+        "content": "We use the information we collect to provide, maintain, and improve our services, to develop new features, and to protect us and our users."
+      },
+      {
+        "title": "3. Data Security",
+        "content": "We implement appropriate technical and organizational measures to protect your personal information against unauthorized or unlawful processing, accidental loss, destruction, or damage."
+      },
+      {
+        "title": "4. Data Sharing",
+        "content": "We do not sell your personal information. We may share your information with third parties only in the following circumstances: with your consent, with our service providers, or when required by law."
+      },
+      {
+        "title": "5. Your Rights",
+        "content": "You have the right to access, correct, or delete your personal information. You can also object to or restrict certain processing of your information."
+      },
+      {
+        "title": "6. Cookies",
+        "content": "We use cookies and similar technologies to provide and support our services. You can control cookie settings through your browser preferences."
+      },
+      {
+        "title": "7. Changes to Policy",
+        "content": "We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page."
+      }
+    ]
   }
 }

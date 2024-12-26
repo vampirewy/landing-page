@@ -8,9 +8,10 @@ import { TestimonialsSection } from "@/components/home/testimonials-section";
 import { UseCasesSection } from "@/components/home/use-cases-section";
 import { Locale } from "@/config/i18n";
 import { getDictionary } from "@/lib/dictionary";
+import { Dictionary } from "@/types/dictionary";
 
 export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
-  const dict = await getDictionary(lang);
+  const dict: Dictionary = await getDictionary(lang);
 
   return (
     <div className="relative mt-14 sm:mt-16">

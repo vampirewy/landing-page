@@ -64,6 +64,24 @@ interface FAQ {
   answer: string;
 }
 
+// Section 接口
+interface Section {
+  title: string;
+  content: string;
+}
+
+// Terms 接口
+interface Terms {
+  title: string;
+  content: Section[];
+}
+
+// Privacy 接口
+interface Privacy {
+  title: string;
+  content: Section[];
+}
+
 // HomePage 接口
 interface HomePage {
   hero: HeroSection;
@@ -128,6 +146,18 @@ export interface Dictionary {
     pricing: string;
     resources: string;
   };
+  terms: Terms;
+  privacy: Privacy;
 }
 
-export type { FeaturesSection, HeroSection, HomePage, HomePageMetaData, NavBarComponent, NavigationItem };
+export type {
+  FeaturesSection,
+  HeroSection,
+  HomePage,
+  HomePageMetaData,
+  NavBarComponent,
+  NavigationItem,
+  Privacy,
+  Section,
+  Terms,
+};
