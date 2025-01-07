@@ -1,8 +1,8 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { HomePage } from "@/types/dictionary";
+import { FAQSection as FAQSectionType } from "@/types/dictionary";
 
 interface FAQSectionProps {
-  dict: HomePage["faq"];
+  dict: FAQSectionType;
 }
 
 export function FAQSection({ dict }: FAQSectionProps) {

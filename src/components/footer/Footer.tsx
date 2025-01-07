@@ -1,9 +1,8 @@
-import { Locale, getLocalizedPath } from "@/config/i18n";
+import { Link } from "@/i18n/routing";
 import { Dictionary } from "@/types/dictionary";
 import { GithubIcon, LinkedinIcon, MessagesSquareIcon, TwitterIcon } from "lucide-react";
-import Link from "next/link";
 
-export default function Footer({ lang, dict }: { lang: Locale; dict: Dictionary["footer"] }) {
+export default function Footer({ dict }: { dict: Dictionary["footer"] }) {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
@@ -31,11 +30,11 @@ export default function Footer({ lang, dict }: { lang: Locale; dict: Dictionary[
 
   const legalLinks = [
     {
-      href: getLocalizedPath("/terms", lang),
+      href: "/terms",
       label: dict.terms,
     },
     {
-      href: getLocalizedPath("/privacy", lang),
+      href: "/privacy",
       label: dict.privacy,
     },
   ];

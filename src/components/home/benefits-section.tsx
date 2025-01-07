@@ -1,8 +1,8 @@
-import { HomePage } from "@/types/dictionary";
+import { BenefitsSection as BenefitsSectionType } from "@/types/dictionary";
 import { Code, Shield, Zap } from "lucide-react";
 
 interface BenefitsSectionProps {
-  dict: HomePage["benefits"];
+  dict: BenefitsSectionType;
 }
 
 const icons = [Zap, Shield, Code];

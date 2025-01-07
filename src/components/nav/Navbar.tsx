@@ -1,8 +1,8 @@
 "use client";
-import { getLocalizedPath, Locale } from "@/config/i18n";
+import { Locale } from "@/config/i18n";
+import { Link } from "@/i18n/routing";
 import { NavBarComponent } from "@/types/dictionary";
 import { Stars } from "lucide-react";
-import Link from "next/link";
 import { useEffect, useState } from "react";
 import NavDesktop from "./NavDesktop";
 import NavDesktopButton from "./NavDesktopButton";
@@ -32,7 +32,7 @@ export default function Navbar({ lang, dict }: { lang: Locale; dict: NavBarCompo
         <div className="flex h-16 lg:h-20 items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <Link href={getLocalizedPath("/", lang)} className="flex items-center space-x-3">
+            <Link href="/" className="flex items-center space-x-3">
               <div className="w-8 h-8 rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 flex items-center justify-center">
                 <Stars className="w-5 h-5 text-white" />
               </div>

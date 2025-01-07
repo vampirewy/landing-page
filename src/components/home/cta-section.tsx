@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
-import { HomePage } from "@/types/dictionary";
+import { CTASection as CTASectionType } from "@/types/dictionary";
 import { ArrowRight, MessageSquare } from "lucide-react";
 
 interface CTASectionProps {
-  dict: HomePage["cta"];
+  dict: CTASectionType;
 }
 
 export function CTASection({ dict }: CTASectionProps) {

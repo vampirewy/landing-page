@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import { Link } from "@/i18n/routing";
 import { NavBarComponent } from "@/types/dictionary";
 import { ChevronDown } from "lucide-react";
-import Link from "next/link";
 
 export default function NavDesktop({ dict }: { dict: NavBarComponent }) {
   return (

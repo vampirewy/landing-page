@@ -1,8 +1,9 @@
-import { HomePage } from "@/types/dictionary";
 import { QuoteIcon } from "lucide-react";
 
+import { TestimonialsSection as TestimonialsSectionType } from "@/types/dictionary";
+
 interface TestimonialsSectionProps {
-  dict: HomePage["testimonials"];
+  dict: TestimonialsSectionType;
 }
 
 export function TestimonialsSection({ dict }: TestimonialsSectionProps) {

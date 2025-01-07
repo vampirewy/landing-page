@@ -1,19 +1,11 @@
-// 主页元数据接口
-interface HomePageMetaData {
-  title: string;
-  description: string;
-}
-
-// 导航项子项接口
-interface NavigationItem {
+export interface NavigationItem {
   name: string;
   href: string;
   hasDropdown?: boolean;
   items?: string[];
 }
 
-// 导航栏组件接口
-interface NavBarComponent {
+export interface NavBarComponent {
   title: string;
   navigation: NavigationItem[];
   loginText: string;
@@ -23,16 +15,19 @@ interface NavBarComponent {
   chooseLanguage: string;
 }
 
-// Hero Section 接口
-interface HeroSection {
+export interface Section {
+  title: string;
+  content: string;
+}
+
+export interface HeroSection {
   title: string;
   subtitle: string;
   cta: string;
   secondaryCta: string;
 }
 
-// Features Section 接口
-interface FeaturesSection {
+export interface FeaturesSection {
   title: string;
   items: Array<{
     title: string;
@@ -40,95 +35,77 @@ interface FeaturesSection {
   }>;
 }
 
-// Testimonial 接口
-interface Testimonial {
-  content: string;
-  author: string;
-  role: string;
-  company: string;
+export interface BenefitsSection {
+  title: string;
+  items: Array<{
+    title: string;
+    description: string;
+  }>;
 }
 
-// Price 接口
-interface PricingPlan {
-  name: string;
-  price: string;
+export interface UseCasesSection {
+  title: string;
   description: string;
-  features: string[];
-  cta: string;
-  popular?: boolean;
-}
-
-// FAQ 接口
-interface FAQ {
-  question: string;
-  answer: string;
-}
-
-// Section 接口
-interface Section {
-  title: string;
-  content: string;
-}
-
-// Terms 接口
-interface Terms {
-  title: string;
-  content: Section[];
-}
-
-// Privacy 接口
-interface Privacy {
-  title: string;
-  content: Section[];
-}
-
-// HomePage 接口
-interface HomePage {
-  hero: HeroSection;
-  features: FeaturesSection;
-  benefits: {
-    title: string;
-    items: Array<{
-      title: string;
-      description: string;
-    }>;
-  };
-  useCases: {
+  cases: Array<{
     title: string;
     description: string;
-    cases: Array<{
-      title: string;
-      description: string;
-    }>;
-  };
-  cta: {
-    title: string;
-    description: string;
-    primaryAction: string;
-    secondaryAction: string;
-  };
-  testimonials: {
-    title: string;
-    subtitle: string;
-    items: Testimonial[];
-  };
-  pricing: {
-    title: string;
-    subtitle: string;
-    plans: PricingPlan[];
-  };
-  faq: {
-    title: string;
-    subtitle: string;
-    items: FAQ[];
-  };
+  }>;
 }
 
-// 字典总接口
-export interface Dictionary {
-  homePageMetaData: HomePageMetaData;
-  navBarComponent: NavBarComponent;
-  homePage: HomePage;
+export interface CTASection {
+  title: string;
+  description: string;
+  primaryAction: string;
+  secondaryAction: string;
+}
+
+export interface TestimonialsSection {
+  title: string;
+  subtitle: string;
+  items: Array<{
+    content: string;
+    author: string;
+    role: string;
+    company: string;
+  }>;
+}
+
+export interface PricingSection {
+  title: string;
+  subtitle: string;
+  plans: Array<{
+    name: string;
+    price: string;
+    description: string;
+    features: string[];
+    cta: string;
+    popular?: boolean;
+  }>;
+}
+
+export interface FAQSection {
+  title: string;
+  subtitle: string;
+  items: Array<{
+    question: string;
+    answer: string;
+  }>;
+}
+
+export type Dictionary = Record<string, string | Record<string, unknown>> & {
+  homePageMetaData: {
+    title: string;
+    description: string;
+  };
+  navBarComponent: {
+    title: string;
+    navigation: NavigationItem[];
+    loginText: string;
+    startText: string;
+    sheetTitle: string;
+    sheetDescription: string;
+    chooseLanguage: string;
+  };
   footer: {
     about: string;
     companyDescription: string;
@@ -145,19 +122,24 @@ export interface Dictionary {
     rightsReserved: string;
     pricing: string;
     resources: string;
+    copyright: string;
   };
-  terms: Terms;
-  privacy: Privacy;
-}
-
-export type {
-  FeaturesSection,
-  HeroSection,
-  HomePage,
-  HomePageMetaData,
-  NavBarComponent,
-  NavigationItem,
-  Privacy,
-  Section,
-  Terms,
+  homePage: {
+    hero: HeroSection;
+    features: FeaturesSection;
+    benefits: BenefitsSection;
+    useCases: UseCasesSection;
+    cta: CTASection;
+    testimonials: TestimonialsSection;
+    pricing: PricingSection;
+    faq: FAQSection;
+  };
+  privacy: {
+    title: string;
+    content: Section[];
+  };
+  terms: {
+    title: string;
+    content: Section[];
+  };
 };

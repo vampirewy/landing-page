@@ -1,8 +1,9 @@
-import { HomePage } from "@/types/dictionary";
 import { Building2, Code2, Palette } from "lucide-react";
 
+import { UseCasesSection as UseCasesSectionType } from "@/types/dictionary";
+
 interface UseCasesSectionProps {
-  dict: HomePage["useCases"];
+  dict: UseCasesSectionType;
 }
 
 const icons = [Building2, Code2, Palette];
@@ -13,9 +14,7 @@ export function UseCasesSection({ dict }: UseCasesSectionProps) {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-2xl font-bold tracking-tight sm:text-4xl">{dict.title}</h2>
-          <p className="mt-4 text-base sm:text-lg leading-8 text-gray-600 dark:text-gray-400">
-            {dict.description}
-          </p>
+          <p className="mt-4 text-base sm:text-lg leading-8 text-gray-600 dark:text-gray-400">{dict.description}</p>
         </div>
         <div className="mx-auto mt-8 max-w-2xl sm:mt-16 lg:mt-20 lg:max-w-none">
           <div className="grid grid-cols-1 gap-6 sm:gap-8 lg:grid-cols-3">
@@ -32,9 +31,7 @@ export function UseCasesSection({ dict }: UseCasesSectionProps) {
                     </div>
                     <h3 className="ml-3 text-lg font-semibold leading-7">{useCase.title}</h3>
                   </div>
-                  <p className="mt-4 text-base leading-7 text-gray-600 dark:text-gray-400">
-                    {useCase.description}
-                  </p>
+                  <p className="mt-4 text-base leading-7 text-gray-600 dark:text-gray-400">{useCase.description}</p>
                 </div>
               );
             })}
@@ -43,4 +40,4 @@ export function UseCasesSection({ dict }: UseCasesSectionProps) {
       </div>
     </div>
   );
-} 
+}

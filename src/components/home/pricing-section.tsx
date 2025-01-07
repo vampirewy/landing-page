@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { HomePage } from "@/types/dictionary";
 import { Check } from "lucide-react";
 
+import { PricingSection as PricingSectionType } from "@/types/dictionary";
+
 interface PricingSectionProps {
-  dict: HomePage["pricing"];
+  dict: PricingSectionType;
 }
 
 export function PricingSection({ dict }: PricingSectionProps) {
