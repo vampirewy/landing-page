@@ -10,5 +10,10 @@
   "termsPageMetaData": {
     "title": "服务条款 - AI Studio",
     "description": "了解使用 AI Studio 的条款和条件。我们的服务条款概述了您作为用户的权利和责任。"
+  },
+  "notFoundPage": {
+    "title": "页面未找到",
+    "description": "无法找到您要访问的页面。请检查网址或返回首页。",
+    "backHome": "返回首页"
   }
 }

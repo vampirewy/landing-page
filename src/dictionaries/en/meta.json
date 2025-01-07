@@ -10,5 +10,10 @@
   "termsPageMetaData": {
     "title": "Terms of Service - AI Studio",
     "description": "Understand the terms and conditions of using AI Studio. Our terms of service outline your rights and responsibilities as a user."
+  },
+  "notFoundPage": {
+    "title": "Page Not Found",
+    "description": "The page you are looking for could not be found. Please check the URL or return to the homepage.",
+    "backHome": "Back to Homepage"
   }
 }

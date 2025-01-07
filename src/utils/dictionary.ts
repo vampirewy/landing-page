@@ -7,6 +7,7 @@ export async function loadDictionary(locale: Locale) {
   const privacy = await import(`@/dictionaries/${locale}/privacy.json`);
   const footer = await import(`@/dictionaries/${locale}/footer.json`);
   const home = await import(`@/dictionaries/${locale}/home.json`);
+  const notFound = await import(`@/dictionaries/${locale}/notFound.json`);
 
   return {
     ...meta.default,
@@ -15,5 +16,6 @@ export async function loadDictionary(locale: Locale) {
     ...privacy.default,
     ...footer.default,
     ...home.default,
+    ...notFound.default,
   };
 }

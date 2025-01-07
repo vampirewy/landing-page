@@ -1,0 +1,7 @@
+{
+  "notFoundPage": {
+    "title": "404 - 页面未找到",
+    "description": "抱歉，我们找不到您要访问的页面。",
+    "backHome": "返回首页"
+  }
+}

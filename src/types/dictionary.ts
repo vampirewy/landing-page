@@ -101,6 +101,11 @@ export type Dictionary = Record<string, string | Record<string, unknown>> & {
   homePageMetaData: MetaData;
   privacyPageMetaData: MetaData;
   termsPageMetaData: MetaData;
+  notFoundPage: {
+    title: string;
+    description: string;
+    backHome: string;
+  };
   navBarComponent: {
     title: string;
     navigation: NavigationItem[];
