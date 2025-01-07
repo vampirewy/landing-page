@@ -92,11 +92,15 @@ export interface FAQSection {
   }>;
 }
 
+interface MetaData {
+  title: string;
+  description: string;
+}
+
 export type Dictionary = Record<string, string | Record<string, unknown>> & {
-  homePageMetaData: {
-    title: string;
-    description: string;
-  };
+  homePageMetaData: MetaData;
+  privacyPageMetaData: MetaData;
+  termsPageMetaData: MetaData;
   navBarComponent: {
     title: string;
     navigation: NavigationItem[];

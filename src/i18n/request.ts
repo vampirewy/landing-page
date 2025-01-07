@@ -1,10 +1,11 @@
-import { defaultLocale } from "@/config/i18n";
+import { Locale, defaultLocale } from "@/config/i18n";
+import { loadDictionary } from "@/utils/dictionary";
 import { getRequestConfig } from "next-intl/server";
 
 export default getRequestConfig(async ({ requestLocale }) => {
-  const locale = (await requestLocale) || defaultLocale;
+  const locale = ((await requestLocale) || defaultLocale) as Locale;
   return {
     locale,
-    messages: (await import(`@/dictionaries/${locale}.json`)).default,
+    messages: await loadDictionary(locale),
   };
 });

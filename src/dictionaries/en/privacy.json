@@ -1,0 +1,35 @@
+{
+  "privacy": {
+    "title": "Privacy Policy",
+    "content": [
+      {
+        "title": "1. Information Collection",
+        "content": "We collect information that you provide directly to us, including when you create an account, use our services, or contact us for support. This may include your name, email address, and usage data."
+      },
+      {
+        "title": "2. Use of Information",
+        "content": "We use the information we collect to provide, maintain, and improve our services, to develop new features, and to protect us and our users."
+      },
+      {
+        "title": "3. Data Security",
+        "content": "We implement appropriate technical and organizational measures to protect your personal information against unauthorized or unlawful processing, accidental loss, destruction, or damage."
+      },
+      {
+        "title": "4. Data Sharing",
+        "content": "We do not sell your personal information. We may share your information with third parties only in the following circumstances: with your consent, with our service providers, or when required by law."
+      },
+      {
+        "title": "5. Your Rights",
+        "content": "You have the right to access, correct, or delete your personal information. You can also object to or restrict certain processing of your information."
+      },
+      {
+        "title": "6. Cookies",
+        "content": "We use cookies and similar technologies to provide and support our services. You can control cookie settings through your browser preferences."
+      },
+      {
+        "title": "7. Changes to Policy",
+        "content": "We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page."
+      }
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "navBarComponent": {
+    "title": "AI",
+    "navigation": [
+      {
+        "name": "产品",
+        "href": "#",
+        "hasDropdown": true,
+        "items": ["AI 助手", "文档处理", "图像生成", "API 接口"]
+      },
+      {
+        "name": "解决方案",
+        "href": "#solutions",
+        "hasDropdown": true,
+        "items": ["企业服务", "个人使用", "开发者"]
+      },
+      {
+        "name": "定价",
+        "href": "#pricing"
+      },
+      {
+        "name": "资源",
+        "href": "#resources"
+      }
+    ],
+    "loginText": "登录",
+    "startText": "免费使用",
+    "sheetTitle": "菜单",
+    "sheetDescription": "浏览我们的产品、解决方案和服务",
+    "chooseLanguage": "选择语言"
+  }
+}

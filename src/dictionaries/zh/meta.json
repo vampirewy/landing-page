@@ -1,0 +1,14 @@
+{
+  "homePageMetaData": {
+    "title": "AI Studio - 企业与开发的智能解决方案",
+    "description": "用 AI Studio 的智能工具改变您的工作方式。我们的 AI 助手、文档处理和 API 服务助力企业更智能、更高效地工作。"
+  },
+  "privacyPageMetaData": {
+    "title": "隐私政策 - AI Studio",
+    "description": "了解 AI Studio 如何处理您的数据。我们的隐私政策概述了我们如何收集、使用和保护您的信息。"
+  },
+  "termsPageMetaData": {
+    "title": "服务条款 - AI Studio",
+    "description": "了解使用 AI Studio 的条款和条件。我们的服务条款概述了您作为用户的权利和责任。"
+  }
+}
