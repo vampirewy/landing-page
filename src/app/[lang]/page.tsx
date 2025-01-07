@@ -10,8 +10,13 @@ import { Locale } from "@/config/i18n";
 import { getDictionary } from "@/lib/dictionary";
 import { Dictionary } from "@/types/dictionary";
 
-export default async function Home({ params: { lang } }: { params: { lang: Locale } }) {
-  const dict: Dictionary = await getDictionary(lang);
+type Props = {
+  params: Promise<{ lang: Locale }>;
+};
+
+export default async function Home({ params }: Props) {
+  const resolvedParams = await params;
+  const dict: Dictionary = await getDictionary(resolvedParams.lang);
 
   return (
     <div className="relative mt-14 sm:mt-16">

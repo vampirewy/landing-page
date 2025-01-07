@@ -20,11 +20,17 @@ const geistMono = localFont({
 
 const inter = Inter({ subsets: ["latin"] });
 
-export async function generateMetadata({ params }: { params: { lang: Locale } }): Promise<Metadata> {
-  const dict: Dictionary = await getDictionary(params.lang);
+type Props = {
+  children: React.ReactNode;
+  params: Promise<{ lang: Locale }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const resolvedParams = await params;
+  const dict: Dictionary = await getDictionary(resolvedParams.lang);
 
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
-  const canonicalPath = params.lang === i18n.defaultLocale ? baseUrl : `${baseUrl}/${params.lang}`;
+  const canonicalPath = resolvedParams.lang === i18n.defaultLocale ? baseUrl : `${baseUrl}/${resolvedParams.lang}`;
 
   return {
     title: dict.homePageMetaData.title,
@@ -39,20 +45,20 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   };
 }
 
-export default async function Layout({ children, params }: { children: React.ReactNode; params: { lang: Locale } }) {
-  const dict: Dictionary = await getDictionary(params.lang);
+export default async function Layout({ children, params }: Props) {
+  const resolvedParams = await params;
+  const dict: Dictionary = await getDictionary(resolvedParams.lang);
 
   return (
-    <html lang={params.lang}>
+    <html lang={resolvedParams.lang}>
       <body
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} ${inter.className} antialiased`}
       >
-        <Navbar lang={params.lang} dict={dict.navBarComponent}></Navbar>
+        <Navbar lang={resolvedParams.lang} dict={dict.navBarComponent}></Navbar>
         <main>{children}</main>
-        <Footer lang={params.lang} dict={dict.footer} />
+        <Footer lang={resolvedParams.lang} dict={dict.footer} />
       </body>
     </html>
   );
 }
-

@@ -2,8 +2,13 @@ import { Locale } from "@/config/i18n";
 import { getDictionary } from "@/lib/dictionary";
 import { Section } from "@/types/dictionary";
 
-export default async function TermsPage({ params: { lang } }: { params: { lang: Locale } }) {
-  const dict = await getDictionary(lang);
+type Props = {
+  params: Promise<{ lang: Locale }>;
+};
+
+export default async function TermsPage({ params }: Props) {
+  const resolvedParams = await params;
+  const dict = await getDictionary(resolvedParams.lang);
 
   return (
     <div className="container mx-auto px-4 py-16 max-w-4xl">
