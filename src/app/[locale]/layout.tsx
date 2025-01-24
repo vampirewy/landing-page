@@ -1,4 +1,6 @@
 import Footer from "@/components/footer/Footer";
+import { LoadingProvider } from "@/components/loading/loading-context";
+import { LoadingInitializer } from "@/components/loading/loading-initializer";
 import Navbar from "@/components/nav/Navbar";
 import { Locale } from "@/config/i18n";
 import { Dictionary } from "@/types/dictionary";
@@ -8,6 +10,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { Inter } from "next/font/google";
 import localFont from "next/font/local";
+import { Toaster } from "sonner";
 
 const geistSans = localFont({
   src: "../fonts/GeistVF.woff",
@@ -50,11 +53,15 @@ export default async function Layout({ children, params }: Props) {
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} ${inter.className} antialiased`}
       >
-        <NextIntlClientProvider messages={messages} locale={locale}>
-          <Navbar lang={locale} dict={typedMessages.navBarComponent} />
-          <main>{children}</main>
-          <Footer dict={typedMessages.footer} />
-        </NextIntlClientProvider>
+        <LoadingProvider>
+          <LoadingInitializer />
+          <NextIntlClientProvider messages={messages} locale={locale}>
+            <Navbar lang={locale} dict={typedMessages.navBarComponent} />
+            <main>{children}</main>
+            <Footer dict={typedMessages.footer} />
+          </NextIntlClientProvider>
+        </LoadingProvider>
+        <Toaster position="top-right" richColors />
       </body>
     </html>
   );

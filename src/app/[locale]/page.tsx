@@ -8,7 +8,9 @@ import { HeroSection } from "@/components/home/hero-section";
 import { PricingSection } from "@/components/home/pricing-section";
 import { TestimonialsSection } from "@/components/home/testimonials-section";
 import { UseCasesSection } from "@/components/home/use-cases-section";
+import { HelloService } from "@/services/hello.service";
 import { useTranslations } from "next-intl";
+import { useEffect } from "react";
 
 export default function Home() {
   const t = useTranslations("homePage");
@@ -60,6 +62,15 @@ export default function Home() {
     primaryAction: t("cta.primaryAction"),
     secondaryAction: t("cta.secondaryAction"),
   };
+
+  const getHello = async () => {
+    const res = await HelloService.getHello();
+    console.log(res);
+  };
+
+  useEffect(() => {
+    getHello();
+  }, []);
 
   return (
     <div className="relative mt-14 sm:mt-16">
